@@ -1,4 +1,7 @@
-﻿using System.Reflection;
+﻿using EntityVisualizer;
+using Microsoft.VisualStudio.DebuggerVisualizers;
+using System.Collections.Generic;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -34,3 +37,5 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+
+[assembly: System.Diagnostics.DebuggerVisualizer(typeof(ListEntityVisualizer), typeof(VisualizerObjectSource), Target = typeof(List<>), Description = "List Entity Show")]
