@@ -2,7 +2,6 @@
 using Microsoft.VisualStudio.DebuggerVisualizers;
 using System.Collections.Generic;
 using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // アセンブリに関する一般情報は以下の属性セットをとおして制御されます。
@@ -38,4 +37,4 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
-[assembly: System.Diagnostics.DebuggerVisualizer(typeof(ListEntityVisualizer), typeof(VisualizerObjectSource), Target = typeof(List<>), Description = "List Entity Show")]
+[assembly: System.Diagnostics.DebuggerVisualizer(typeof(ListEntityVisualizer), typeof(VisualizerObjectSource), Target = typeof(List<>), Description = "エンティティ ビジュアライザ")]
