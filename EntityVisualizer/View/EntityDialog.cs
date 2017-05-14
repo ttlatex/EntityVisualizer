@@ -34,10 +34,5 @@ namespace EntityVisualizer
         {
             this.Close();
         }
-
-        //private T GetPropaties<T>(List<T> entity)
-        //{
-        //    return new T();
-        //}
     }
 }

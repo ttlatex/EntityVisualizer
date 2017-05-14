@@ -11,10 +11,10 @@ namespace EntityVisualizer
         protected override void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)
         {
             dynamic entity = objectProvider.GetObject();
-
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EntityDialog(entity));
+            
+            var dialog = new EntityDialog(entity);
+            dialog.StartPosition = FormStartPosition.CenterParent;
+            dialog.ShowDialog();
         }
     }
 }

@@ -35,7 +35,8 @@
             // 
             // GridEntity
             // 
-            this.GridEntity.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.GridEntity.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GridEntity.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridEntity.Location = new System.Drawing.Point(0, 0);
@@ -46,9 +47,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(195, 267);
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(388, 265);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 24);
+            this.button1.Size = new System.Drawing.Size(91, 24);
             this.button1.TabIndex = 1;
             this.button1.Text = "閉じる";
             this.button1.UseVisualStyleBackColor = true;
@@ -59,10 +61,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(510, 293);
-            this.ControlBox = false;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.GridEntity);
             this.Name = "EntityDialog";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "エンティティ ビジュアライザ";
             this.Load += new System.EventHandler(this.EntityDialog_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridEntity)).EndInit();
