@@ -1,8 +1,5 @@
 ﻿using Microsoft.VisualStudio.DebuggerVisualizers;
-using System.Collections.Generic;
 using System.Windows.Forms;
-
-
 
 namespace EntityVisualizer
 {
@@ -11,10 +8,12 @@ namespace EntityVisualizer
         protected override void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)
         {
             dynamic entity = objectProvider.GetObject();
-            
-            var dialog = new EntityDialog(entity);
-            dialog.StartPosition = FormStartPosition.CenterParent;
-            dialog.ShowDialog();
+
+            using (var dialog = new EntityDialog(entity))
+            {
+                dialog.StartPosition = FormStartPosition.CenterParent;
+                dialog.ShowDialog();
+            }
         }
     }
 }
