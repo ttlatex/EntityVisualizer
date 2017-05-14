@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityVisualizer", "EntityV
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityVisualizerTest", "..\EntityVisualizerTest\EntityVisualizerTest.csproj", "{5DAFDCCA-28D3-403B-AC7E-9E0D324DCADA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormTest", "..\WindowsFormsApp1\FormTest.csproj", "{27817F6A-0F97-459F-AC7F-0033DCD187B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5DAFDCCA-28D3-403B-AC7E-9E0D324DCADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DAFDCCA-28D3-403B-AC7E-9E0D324DCADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DAFDCCA-28D3-403B-AC7E-9E0D324DCADA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27817F6A-0F97-459F-AC7F-0033DCD187B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27817F6A-0F97-459F-AC7F-0033DCD187B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27817F6A-0F97-459F-AC7F-0033DCD187B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27817F6A-0F97-459F-AC7F-0033DCD187B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

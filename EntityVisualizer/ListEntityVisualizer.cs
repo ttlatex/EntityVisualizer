@@ -12,8 +12,9 @@ namespace EntityVisualizer
         {
             dynamic entity = objectProvider.GetObject();
 
-            MessageBox.Show("aaa");
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new EntityDialog(entity));
         }
-        // Other class methods would be here.
     }
 }

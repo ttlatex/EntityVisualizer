@@ -1,28 +1,29 @@
 ﻿using EntityVisualizer;
 using EntityVisualizerTest.Entity;
-using Microsoft.VisualStudio.DebuggerVisualizers;
-using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EntityVisualizerTest
+namespace WindowsFormsApp1
 {
-    public class ListEntityVisualizerTest
+    static class Program
     {
-        [Test]
-        public void TestShowVisualizer()
+        /// <summary>
+        /// アプリケーションのメイン エントリ ポイントです。
+        /// </summary>
+        [STAThread]
+        static void Main()
         {
             var entity = new List<IceCream> {
                 new IceCream { Flavor = "Vanilla", Price = 6 },
                 new IceCream { Flavor = "Choco", Price = 10 },
             };
 
-            new VisualizerDevelopmentHost(entity, typeof(ListEntityVisualizer))
-                .ShowVisualizer();
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new EntityDialog(entity));
         }
     }
 }
