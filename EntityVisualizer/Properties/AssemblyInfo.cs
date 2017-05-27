@@ -1,6 +1,6 @@
 ﻿using EntityVisualizer;
-using Microsoft.VisualStudio.DebuggerVisualizers;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
@@ -34,7 +34,7 @@ using System.Runtime.InteropServices;
 // すべての値を指定するか、次を使用してビルド番号とリビジョン番号を既定に設定できます
 // 以下のように '*' を使用します:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.0.1.0")]
+[assembly: AssemblyFileVersion("1.0.1.0")]
 
-[assembly: System.Diagnostics.DebuggerVisualizer(typeof(ListEntityVisualizer), typeof(VisualizerObjectSource), Target = typeof(List<>), Description = "エンティティ ビジュアライザ")]
+[assembly: DebuggerVisualizer(typeof(ListEntityVisualizer), typeof(ListEntityVisualizerObjectSource), Target = typeof(List<>), Description = "エンティティ ビジュアライザ")]
