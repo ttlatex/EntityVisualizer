@@ -6,6 +6,7 @@ using System.Collections.Generic;
 
 namespace EntityVisualizerTest
 {
+    [TestFixture]
     public class ListEntityVisualizerTest
     {
         [Test]
@@ -21,8 +22,8 @@ namespace EntityVisualizerTest
                 new IceCream { ID="7", Flavor = "Banana", Price = 10,Type = 0 },
                 new IceCream { ID="8", Flavor = "Melon", Price = 10,Type = 0 },
             };
-            
-            new VisualizerDevelopmentHost(entity, typeof(ListEntityVisualizer))
+
+            new VisualizerDevelopmentHost(entity, typeof(ListEntityVisualizer), typeof(ListEntityVisualizerObjectSource))
                 .ShowVisualizer();
         }
     }
